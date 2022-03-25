@@ -1,0 +1,159 @@
+@charset "UTF-8";
+/*
+Theme Name: Smart Cleaning Services
+Author: TheMagnifico52
+Theme URI: https://www.themagnifico.net/themes/free-cleaning-services-wordpress-theme/
+Author URI: https://www.themagnifico.net/
+Description: Smart Cleaning services is a multipurpose, modern, elegant and professional theme to showcase your services online. You can use this amazing theme for cleaning company or agency, cleaning services, floor cleaning, maid service, washing services, car washing, maintenance, plumbing, gardening and landscaping, painting and staining, laundryman, electrician, carpenter workshops, auto parts market, and all such related websites. Its flexible design helps to advertise the cleaning services to potential customers. It offers to select from amazing appealing home page options, helping to create a helpful cleaning service provider website. The design is 100% responsive thus making it responsive on all the devices, be it desktop, laptop, tablets or smartphones. This theme is compatible with the latest version of WordPress and plugins like WooCommerce, Elementor, Contact form 7, etc. Also, it is cross-browser compatible that loads quickly on all browsers. It is SEO-friendly to assist your site with search engine ranking and make it rank on all major search engines like Google. The theme’s foundation is on bootstrap framework that makes it really handy to use. With social media option and widgets, link all your social media pages to show your popularity and give credibility to your work.
+Version: 0.1.1
+Tested up to: 5.9
+Requires PHP: 7.2
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Template: smart-cleaning
+Text Domain: smart-cleaning-services
+Tags: custom-logo, one-column, two-columns, wide-blocks, block-styles, editor-style, sticky-post, custom-background, custom-colors, custom-header, custom-menu, featured-images, flexible-header, full-width-template, threaded-comments, theme-options, rtl-language-support, left-sidebar, right-sidebar, grid-layout, blog, e-commerce, food-and-drink
+
+Smart Cleaning Services WordPress Theme has been created by TheMagnifico52(themagnifico.net), 2022.
+Smart Cleaning Services WordPress Theme is released under the terms of GNU GPL
+*/
+
+a, .sidebar ul li a:hover, .widget a:hover, .widget a:focus, p.price, .woocommerce ul.products li.product .price, .woocommerce div.product p.price, .woocommerce div.product span.price, .woocommerce-message::before, .woocommerce-info::before, .featured-imagebox h4 a, #featured-topic h3, .main-navigation .sub-menu > li > a:hover, .main-navigation .sub-menu > li > a:focus,.navbar-brand a{
+    color: #247ffb;
+}
+.socialmedia .main_header, .sidebar h5, .comment-respond input#submit, #button, #colophon, .post-navigation .nav-previous a:hover, .post-navigation .nav-next a:hover, .posts-navigation .nav-previous a:hover, .posts-navigation .nav-next a:hover, .sticky .entry-title::before, .main-navigation .sub-menu, .sidebar input[type="submit"], .sidebar button[type="submit"], .wp-block-button__link, .pro-button a, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce .woocommerce-ordering select, .woocommerce-account .woocommerce-MyAccount-navigation ul li, .btn-primary, .slide-btn a:hover, .timebox, .toggle-nav i,.slide-btn a,.servbtn a,.serach_inner form.search-from{
+    background: #247ffb;
+}
+.wp-block-quote, .wp-block-quote:not(.is-large):not(.is-style-large), .wp-block-pullquote{
+    border-color: #247ffb !important;
+}
+h1, h2, h3, h4, h5, h6,.top-info p, .top-info span,.top-info i,.main-navigation .menu > li > a,.top-info a,.article-box a,#featured-topic h3{
+    color: #1b212f;
+}
+.page-template-home-template .socialmedia{
+    background: #fff;
+}
+.main-navigation .menu > li > a,.main-navigation .menu > li > a:hover{
+    border: none;
+}
+.main-navigation .sub-menu > li > a:hover, .main-navigation .sub-menu > li > a:focus,.slide-btn a:hover, .servbtn a:hover,.pro-button a:hover, .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover,.box-content .servbtn a:hover{
+    background: #1b212f;
+    color: #fff;
+}
+.main_header i,.slide-btn a, .servbtn a {
+    color: #fff;
+}
+.main_header p {
+    font-weight: 500;
+}
+.main-navigation .menu > li{
+    font-size: 12px;
+    font-weight: 600;
+}
+.serach_inner input.search-field::placeholder {
+    color: #fff;
+    font-weight: 600;
+}
+.serach_inner [type="submit"] {
+    background: url(assets/img/icon.png) no-repeat scroll 0 2px;
+}
+.navbar-brand{
+    display: block;
+}
+
+/* Services Section */
+
+.box{
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+}
+.box:before{
+    content: "";
+    background: #247ffb;
+    width: 0;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transition: all .5s ease;
+}
+.box:hover:before{
+    width: 100%;
+    opacity: 1;
+    left: 0;
+}
+.box img{
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+    transition: all 0.5s ease-in-out;
+}
+.box:hover img{
+    opacity: 0;
+    transform: scale(1.5);
+}
+.box .box-content{
+    color: #fff;
+    width: 100%;
+    padding: 0 20px;
+    opacity: 0;
+    transform: translateY(-50%) scale(3);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    transition: all .5s ease;
+}   
+.box:hover .box-content{
+    transform: translateY(-50%) scale(1);
+    opacity: 1;
+}
+.box .title{
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0 0 7px;
+}
+.box .post{
+    font-size: 15px;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0 0 11px;
+    padding: 0 0 2px;
+    border: 1px dashed rgba(255,255,255,0.3);
+    border-right: none;
+    border-left: none;
+    display: inline-block;
+}
+.box:hover .box-cont{
+    opacity: 0;
+}
+.box-cont {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    background-image: linear-gradient(rgb(255 255 255 / 50%), #000);
+    color: #fff;
+}
+.box-content h3,.box-cont h3 {
+    color: #fff;
+}
+.box-content .servbtn a{
+    background: #fff;
+    color: #247ffb;
+}
+
+@media screen and (min-width: 320px) and (max-width: 720px){
+    .main-navigation .menu > li > a{
+        color: #fff;
+    }
+    .main-navigation .sub-menu{
+        background: transparent;
+    }
+}
